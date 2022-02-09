@@ -22,8 +22,8 @@
   "engines": {
     "vscode": "^1.5.0"
   },
-  "author": "Zolotov Dmitrii",
-  "publisher": "Zolotov Dmitrii",
+  "author": "goldim",
+  "publisher": "goldim",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/goldim/vscode-qx6-snippets/issues"
