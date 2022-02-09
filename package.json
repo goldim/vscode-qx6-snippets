@@ -1,0 +1,52 @@
+{
+  "name": "qx6-snippets",
+  "displayName": "Qooxdoo Snippets",
+  "version": "0.0.1",
+  "icon": "images/logo.png",
+  "description": "Code snippets for qooxdoo v6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldim/vscode-qx6-snippets.git"
+  },
+  "keywords": [
+    "javascript",
+    "snippet",
+    "qooxdoo",
+    "qx",
+    "v6"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "author": "Zolotov Dmitrii",
+  "publisher": "Zolotov Dmitrii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldim/vscode-qx6-snippets/issues"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "qooxdoo",
+        "aliases": [
+            "Qooxdoo",
+            "qx"
+        ],
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  },
+  "homepage": "https://github.com/goldim/vscode-qx6-snippets#readme"
+}
