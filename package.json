@@ -20,7 +20,7 @@
     "Snippets"
   ],
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^1.63.2"
   },
   "author": "goldim",
   "publisher": "goldim",
@@ -33,11 +33,8 @@
       {
         "id": "qooxdoo",
         "aliases": [
-            "Qooxdoo",
-            "qx"
-        ],
-        "extensions": [
-          ".js"
+          "Qooxdoo",
+          "qx"
         ]
       }
     ],
@@ -48,5 +45,8 @@
       }
     ]
   },
-  "homepage": "https://github.com/goldim/vscode-qx6-snippets#readme"
+  "homepage": "https://github.com/goldim/vscode-qx6-snippets#readme",
+  "dependencies": {
+    "vsce": "^2.6.7"
+  }
 }
