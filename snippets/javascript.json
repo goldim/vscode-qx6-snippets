@@ -1,19 +1,19 @@
 {
     "qx.Interface.define": {
-        "prefix": "qx.I",
+        "prefix": ["qx.Interface.define"],
         "body": [
-            "qx.Interface.define(\"${MyInterfaceName}\", {",
+            "qx.Interface.define(\"${1:MyInterfaceName}\", {",
             "    members: {",
             "    }",
             "});"
         ],
-        "description": "Code snippet for qooxdoo interface"
+        "description": "qooxdoo interface declaration"
     },
     "qx.Class.define": {
-        "prefix": "qx.C",
+        "prefix": ["qx.Class.define"],
         "body": [
-            "qx.Class.define(\"${MyClassName}\", {",
-            "    extend: \"qx.core.Object\",",
+            "qx.Class.define(\"${1:MyClassName}\", {",
+            "    extend: \"${2:qx.core.Object}\",",
             "",
             "    construct: function() {",
             "    },",
@@ -25,40 +25,40 @@
             "    }",
             "});"
         ],
-        "description": "Code snippet for qooxdoo class"
+        "description": "qooxdoo class declaration"
     },
     "qx.Mixin.define": {
-        "prefix": "qx.M",
+        "prefix": ["qx.Mixin.define"],
         "body": [
-            "qx.Mixin.define(\"${MyMixinName}\", {",
+            "qx.Mixin.define(\"${1:MyMixinName}\", {",
             "    members: {",
             "    }",
             "});"
         ],
-        "description": "Code snippet for qooxdoo mixin"
+        "description": "qooxdoo mixin declaration"
     },
     "extend": {
-        "prefix": "ext",
+        "prefix": ["extend"],
         "body": [
-            "extend: \"${ClassName}\""
+            "extend: \"${1:ClassName}\""
         ],
-        "description": "Code snippet for qooxdoo mixin"
+        "description": "Expects a parent class name"
     },
-    "construct": {
-        "prefix": "cons",
+    "qooxdoo constructor": {
+        "prefix": ["construct"],
         "body": [
-            "construct: function() {",
+            "construct: function($1) {",
             "    this.base(arguments);",
             "},"
         ],
-        "description": "Code snippet for qooxdoo mixin"
+        "description": "qooxdoo class constructor"
     },
-    "destruct": {
-        "prefix": "dest",
+    "qooxdoo destructor": {
+        "prefix": ["destruct"],
         "body": [
             "destruct: function() {",
             "},"
         ],
-        "description": "Code snippet for qooxdoo mixin"
+        "description": "qooxdoo class destructor"
     }
 }
