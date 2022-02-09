@@ -1,0 +1,64 @@
+{
+    "qx.Interface.define": {
+        "prefix": "qx.I",
+        "body": [
+            "qx.Interface.define(\"${MyInterfaceName}\", {",
+            "    members: {",
+            "    }",
+            "});"
+        ],
+        "description": "Code snippet for qooxdoo interface"
+    },
+    "qx.Class.define": {
+        "prefix": "qx.C",
+        "body": [
+            "qx.Class.define(\"${MyClassName}\", {",
+            "    extend: \"qx.core.Object\",",
+            "",
+            "    construct: function() {",
+            "    },",
+            "",
+            "    properties: {",
+            "    },",
+            "",
+            "    members: {",
+            "    }",
+            "});"
+        ],
+        "description": "Code snippet for qooxdoo class"
+    },
+    "qx.Mixin.define": {
+        "prefix": "qx.M",
+        "body": [
+            "qx.Mixin.define(\"${MyMixinName}\", {",
+            "    members: {",
+            "    }",
+            "});"
+        ],
+        "description": "Code snippet for qooxdoo mixin"
+    },
+    "extend": {
+        "prefix": "ext",
+        "body": [
+            "extend: \"${ClassName}\""
+        ],
+        "description": "Code snippet for qooxdoo mixin"
+    },
+    "construct": {
+        "prefix": "cons",
+        "body": [
+            "construct: function() {",
+            "    this.base(arguments);",
+            "},"
+        ],
+        "description": "Code snippet for qooxdoo mixin"
+    },
+    "destruct": {
+        "prefix": "dest",
+        "body": [
+            "destruct: function() {",
+            "},"
+        ],
+        "description": "Code snippet for qooxdoo mixin"
+    }
+}
