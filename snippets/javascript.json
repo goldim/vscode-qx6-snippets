@@ -1,18 +1,19 @@
 {
-    "qx.Interface.define": {
+    "interface": {
         "prefix": ["qx.Interface.define"],
         "body": [
-            "qx.Interface.define(\"${1:MyInterfaceName}\", {",
+            "qx.Interface.define(\"${1:IInterfaceName}\", {",
             "    members: {",
+            "        $2",
             "    }",
             "});"
         ],
         "description": "qooxdoo interface declaration"
     },
-    "qx.Class.define": {
+    "class": {
         "prefix": ["qx.Class.define"],
         "body": [
-            "qx.Class.define(\"${1:MyClassName}\", {",
+            "qx.Class.define(\"${1:ClassName}\", {",
             "    extend: \"${2:qx.core.Object}\",",
             "",
             "    construct: function() {",
@@ -27,11 +28,12 @@
         ],
         "description": "qooxdoo class declaration"
     },
-    "qx.Mixin.define": {
+    "mixin": {
         "prefix": ["qx.Mixin.define"],
         "body": [
-            "qx.Mixin.define(\"${1:MyMixinName}\", {",
+            "qx.Mixin.define(\"${1:MMixinName}\", {",
             "    members: {",
+            "        $2",
             "    }",
             "});"
         ],
@@ -40,25 +42,57 @@
     "extend": {
         "prefix": ["extend"],
         "body": [
-            "extend: \"${1:ClassName}\""
+            "extend: \"${1:qx.core.Object}\","
         ],
         "description": "Expects a parent class name"
     },
-    "qooxdoo constructor": {
+    "implement": {
+        "prefix": ["implement"],
+        "body": [
+            "implement: \"$1\","
+        ],
+        "description": "Expects a interface name"
+    },
+    "include": {
+        "prefix": ["include"],
+        "body": [
+            "include: [\"$1\"],"
+        ],
+        "description": "Expects a mixin name"
+    },
+    "type": {
+        "prefix": ["type"],
+        "body": [
+            "type: \"[${1|abstract,singleton,static|}]\","
+        ],
+        "description": "class type"
+    },
+    "constructor": {
         "prefix": ["construct"],
         "body": [
             "construct: function($1) {",
             "    this.base(arguments);",
+            "    $2",
             "},"
         ],
         "description": "qooxdoo class constructor"
     },
-    "qooxdoo destructor": {
+    "destructor": {
         "prefix": ["destruct"],
         "body": [
             "destruct: function() {",
+            "    $1",
             "},"
         ],
         "description": "qooxdoo class destructor"
+    },
+    "events": {
+        "prefix": ["events"],
+        "body": [
+            "events: {",
+            "    \"${1:Name}\": \"${2|qx.event.type.Event,qx.event.type.Data|}\"",
+            "},"
+        ],
+        "description": "qooxdoo events section"
     }
 }
