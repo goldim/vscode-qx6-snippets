@@ -13,6 +13,21 @@ construct: function() {
 
 Alternatively, one can also just press <kbd>Ctrl</kbd> + <kbd>Space</kbd> (works on Windows, Linux, or Mac) to access the available snippets in the editor.
 
+## Snippets
+
+| Snippet               | Purpose                                 |
+| ----------------------| ----------------------------------------|
+| `qx.Interface.define` | interface declaration                   |
+| `qx.Class.define`     | class declaration                       |
+| `qx.Mixin.define`     | mixin declaration                       |
+| `extend`              | extend word, default qx.core.Object     |
+| `implement`           | implement interface                     |
+| `include`             | include mixin                           |
+| `type`                | class type: abstract, static, singleton |
+| `construct`           | class constructor                       |
+| `destruct`            | class destructor                        |
+| `events`              | event section                           |
+
 ## Installation
 
 1. Install Visual Studio Code 0.10.1 or higher
