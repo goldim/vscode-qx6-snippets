@@ -15,18 +15,18 @@ Alternatively, one can also just press <kbd>Ctrl</kbd> + <kbd>Space</kbd> (works
 
 ## Snippets
 
-| Snippet               | Purpose                                 |
-| ----------------------| ----------------------------------------|
-| `qx.Interface.define` | interface declaration                   |
-| `qx.Class.define`     | class declaration                       |
-| `qx.Mixin.define`     | mixin declaration                       |
-| `extend`              | extend word, default qx.core.Object     |
-| `implement`           | implement interface                     |
-| `include`             | include mixin                           |
-| `type`                | class type: abstract, static, singleton |
-| `construct`           | class constructor                       |
-| `destruct`            | class destructor                        |
-| `events`              | event section                           |
+| Snippet               | Purpose                                       |
+| ----------------------| ----------------------------------------------|
+| `qx.Interface.define` | interface declaration                         |
+| `qx.Class.define`     | class declaration                             |
+| `qx.Mixin.define`     | mixin declaration                             |
+| `extend`              | extend word, default `qx.core.Object`         |
+| `implement`           | implement interface                           |
+| `include`             | include mixin                                 |
+| `type`                | class type: `abstract`, `static`, `singleton` |
+| `construct`           | class constructor                             |
+| `destruct`            | class destructor                              |
+| `events`              | event section                                 |
 
 ## Installation
 
