@@ -1,6 +1,8 @@
 # qooxdoo v6 Snippets
 This extension for Visual Studio Code adds snippets for qooxdoo framework.
 
+![create qooxdoo class](images/usage-example.gif)
+
 ## Usage
 Type a part of the keywords in snippet e.g., "construct" and press enter.
 
