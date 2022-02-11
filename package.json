@@ -13,7 +13,10 @@
     "snippet",
     "qooxdoo",
     "qx",
-    "v6"
+    "v6",
+    "vscode",
+    "syntax",
+    "template"
   ],
   "categories": [
     "Programming Languages",
