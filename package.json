@@ -1,7 +1,7 @@
 {
   "name": "qx6-snippets",
   "displayName": "Qooxdoo Snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "icon": "images/logo.png",
   "description": "Code snippets for qooxdoo v6",
   "repository": {
