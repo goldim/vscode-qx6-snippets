@@ -7,7 +7,7 @@ This extension for Visual Studio Code adds snippets for qooxdoo framework.
 Type a part of the keywords in snippet e.g., "construct" and press enter.
 
 ```javascript
-// Creates a for loop snippet
+// Creates a constructor snippet
 construct: function() {
     this.base(arguments);
 }, 
