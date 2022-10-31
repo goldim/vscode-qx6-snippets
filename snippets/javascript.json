@@ -16,7 +16,7 @@
             "qx.Class.define(\"${1:ClassName}\", {",
             "    extend: ${2:qx.core.Object},",
             "",
-            "    construct: function() {",
+            "    construct() {",
             "    },",
             "",
             "    properties: {",
@@ -70,7 +70,7 @@
     "constructor": {
         "prefix": ["construct"],
         "body": [
-            "construct: function($1) {",
+            "construct($1) {",
             "    this.base(arguments);",
             "    $2",
             "},"
@@ -80,7 +80,7 @@
     "destructor": {
         "prefix": ["destruct"],
         "body": [
-            "destruct: function() {",
+            "destruct() {",
             "    $1",
             "},"
         ],
