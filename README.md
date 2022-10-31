@@ -8,7 +8,7 @@ Type a part of the keywords in snippet e.g., "construct" and press enter.
 
 ```javascript
 // Creates a constructor snippet
-construct: function() {
+construct() {
     this.base(arguments);
 }, 
 ```
