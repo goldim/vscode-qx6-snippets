@@ -14,7 +14,7 @@
         "prefix": ["qx.Class.define"],
         "body": [
             "qx.Class.define(\"${1:ClassName}\", {",
-            "    extend: \"${2:qx.core.Object}\",",
+            "    extend: ${2:qx.core.Object},",
             "",
             "    construct: function() {",
             "    },",
@@ -42,7 +42,7 @@
     "extend": {
         "prefix": ["extend"],
         "body": [
-            "extend: \"${1:qx.core.Object}\","
+            "extend: ${1:qx.core.Object},"
         ],
         "description": "Expects a parent class name"
     },
